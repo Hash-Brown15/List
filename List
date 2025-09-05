@@ -1,0 +1,25 @@
+from tkinter import *
+
+top = Tk()
+top.title("My favorite Dishes")
+listbox = Listbox(top,height = 10,
+                  width = 15,
+                  bg = "grey",
+                  activestyle='dotbox',
+                  font = "Helvetica",
+                  fg = "yellow")
+
+top.geometry("300x250")
+
+label = Label(top, text = "FOOD ITEMS")
+
+listbox.insert(1, "Pizza")
+listbox.insert(2, "Burger and Fries")
+listbox.insert(3, "Hash Browns")
+listbox.insert(4, "Sushi")
+listbox.insert(5, "Fish and Chips")
+
+label.pack()
+listbox.pack()
+
+top.mainloop()
